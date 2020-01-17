@@ -1,14 +1,14 @@
 # Exercise 1: calling built-in functions
 
 # Create a variable `my_name` that contains your name
-
+my_name <- "sereen"
 
 # Create a variable `name_length` that holds how many letters (including spaces)
 # are in your name (use the `nchar()` function)
-
+name_lenght <-nchar(my_name)
 
 # Print the number of letters in your name
-
+paste(name_lenght)
 
 # Create a variable `now_doing` that is your name followed by "is programming!" 
 # (use the `paste()` function)
