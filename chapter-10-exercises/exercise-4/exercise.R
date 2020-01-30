@@ -30,10 +30,10 @@
 
 
 # Which organization received the largest grant?
-
+grants[grants$total_amount == max(grants$total_amount), "organization"]
 
 # Which organization received the smallest grant?
-
+grants[grants$total_amount == min(grants$total_amount), "organization"]
 
 # How many grants were awarded in 2010?
-
+nrow(grants[grants$start_year == "2010",])
