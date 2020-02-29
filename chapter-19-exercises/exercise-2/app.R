@@ -1,30 +1,36 @@
 # Exercise 2: a basic Shiny app
 
 # Load the `shiny` package
-
+install.packages("shiny")
+library(shiny)
 
 # Define a new `ui` variable. This variable should be assigned a `fluidPage()` layout
 # The `fluidPage()` layout should be passed the following:
-
+ui <- fluidPage(titlePanel())
   
   # A `titlePanel()` layout with the text "Cost Calculator"
-
+ui <- fluidPage(titlePanel("cost calculator"), numericInput(label = "price(in dollars"), value = 0, min = 0, numericInput(label = "Quantity", value = 1, min = 1
+))
   
   # A `numericInput()` widget with the label "Price (in dollars)"
   # It should have a default value of 0 and a minimum value of 0
   # Hint: look up the function's arguments in the documentation!
 
-  
+ui <- fluidPage(titlePanel("cost calculator"), numericInput(label = "price(in dollars"), value = 0, min = 0, numericInput(label = "Quantity", value = 1, min = 1
+))
   # A second `numericInput()` widget with the label "Quantity"
   # It should have a default value of 1 and a minimum value of 1  
-
+ui <- fluidPage(titlePanel("cost calculator"), numericInput(label = "price(in dollars"), value = 0, min = 0, numericInput(label = "Quantity", value = 1, min = 1
+))
   
   # The word "Cost", strongly bolded
-
+ui <- fluidPage(titlePanel("cost calculator"), numericInput(label = "price(in dollars"), value = 0, min = 0, numericInput(label = "Quantity", value = 1, min = 1
+))
   
   # A `textOutput()` output of a calculated value labeled `cost`
 
-
+ui <- fluidPage(titlePanel("cost calculator"), numericInput(label = "price(in dollars"), value = 0, min = 0, numericInput(label = "Quantity", value = 1, min = 1
+))
 
 # Define a `server` function (with appropriate arguments)
 # This function should perform the following:

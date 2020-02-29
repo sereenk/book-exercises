@@ -9,16 +9,18 @@ library("shiny")
 # This layout will contain the following elements:
   
   # A `titlePanel()` with the text "Income Inequality"
-  
+ intropanel <- tabPanel(title = "introduction") 
 
   # A paragraph `p()` describing with the text: "The below diagram was created
   # by the New York Times to illustrate the increasing level of inequality in
   # the US."
-  
+p("The below diagram was created
+   by the New York Times to illustrate the increasing level of inequality in
+  the US.")
 
   # An image `img()` to display. This content should have a `src` attribute of
   # "inequality.png" (which will refer to the file in the `www/` folder).
-  
+ img("inequality.png" ) 
 
   # A paragraph containing a hyperlink `a()` to the source of the article at
   # https://www.nytimes.com/interactive/2017/08/07/opinion/leonhardt-income-inequality.html
